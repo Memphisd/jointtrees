@@ -1,0 +1,47 @@
+{
+ "format": "jointtrees witness 3",
+ "library": "jointtrees 0.1",
+ "problem": {"name": "Decoding", "q": 3, "rate": 0.3690702464, "weight": 1.0},
+ "tree": {
+  "joins": [
+   {},
+   {"split": true},
+   {
+    "exact": false,
+    "filter": {"family": "prices", "tilt": "opposite", "u": 0.5},
+    "syndrome": {"family": "prices", "tilt": "own", "u": "free"}
+   }
+  ],
+  "digits": [0, 1, 2],
+  "nonzero": "free",
+  "accounting": "many-solutions"
+ },
+ "memory_bound": null,
+ "claimed": {"time": 0.22965144241062838, "memory": 0.22404409570711442, "F": 0.14489392796746753},
+ "parameters": {
+  "ell": [3.611431537230266e-16, 0.28831572193155597],
+  "p": {"2": {"0": 0.5593195630071184, "1": 0.44068043697440085, "2": 1.8480772467910356e-11}},
+  "J": {
+   "2": [[0.5497311156315249, 0.22020269343737162, 8.176787596751448e-12],
+    [0.22020269343737162, 2.1271972744074593e-12, 0.004794223687796715],
+    [8.176787596751448e-12, 0.004794223687796715, 0.00027505009965760437]]
+  },
+  "filter": {"2": {"z": {"1": -7.012628492506827e-07, "2": 4.275609906710727e-06}}},
+  "syndrome_filter": {
+   "u": 0.5000007815291077,
+   "z": {"1": 2.36916488693814, "2": 4.738311655073488},
+   "z_y": {"1": -2.369156611253218, "2": -4.738311655102759}
+  }
+ },
+ "derived": {
+  "ell_d": 0.0,
+  "omega_1": 0.5509772137788712,
+  "kappa": 0.5509772137890537,
+  "p": {
+   "0": {"0": 0.7699338090770734, "1": 0.22499691712729553, "2": 0.005069273795631107},
+   "1": {"0": 0.7699338090770734, "1": 0.22499691712729553, "2": 0.005069273795631107}
+  },
+  "filter": {"2": {"u": 0.5}}
+ },
+ "notes": {"note": "Decoding over F_3 at rate 0.36907, an error of weight 1. Tree: depth 2, digits 0..2, free non-zero digits, many solutions. Joins: 0 exact, 1 split, 2 nearest-neighbour with the syndrome filter PriceFilter (own tilt, free center size) and the window filter PriceFilter (opposite tilt, center size 0.5). No memory bound."}
+}

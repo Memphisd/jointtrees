@@ -1,0 +1,31 @@
+{
+ "format": "jointtrees witness 3",
+ "library": "jointtrees 0.1",
+ "problem": {"name": "Decoding", "q": 2, "rate": 0.44, "weight": "gv"},
+ "tree": {
+  "joins": [{"dissection": true}, {}, {}],
+  "digits": [0, 1],
+  "nonzero": "alike",
+  "accounting": "repetitions"
+ },
+ "memory_bound": 0.04,
+ "claimed": {"time": 0.10651847457158165, "memory": 0.040000000000708455},
+ "parameters": {
+  "ell": [0.018750593852157927, 0.03998796319896616],
+  "ell_d": 0.03965302182834547,
+  "omega_1": 0.023825009284521994,
+  "J": {
+   "1": [[0.9716488497426407, 0.013885214847882101], [0.013885214847882101, 0.0005807205615951512]],
+   "2": [[0.9501034726653129, 0.022126097638922888], [0.022126097638922888, 0.005644332056841316]]
+  }
+ },
+ "derived": {
+  "kappa": 0.5383915788794695,
+  "p": {
+   "0": {"0": 0.9855340645905227, "1": 0.014465935409477252},
+   "1": {"0": 0.9722295703042358, "1": 0.027770429695764202},
+   "2": {"0": 0.9557478047221543, "1": 0.044252195277845775}
+  }
+ },
+ "notes": {"note": "Decoding over F_2 at rate 0.44, an error of the Gilbert-Varshamov weight. Tree: depth 2, digits 0, 1, subtrees repeated when representations are missing. Joins: 0 by the 7-dissection, 1 and 2 exact. Memory bound 0.04."}
+}

@@ -1,0 +1,16 @@
+[project]
+name = "jointtrees"
+version = "0.1"
+description = "Representation trees with joint types and filtered joins: one model for subset sum, LWE and decoding"
+authors = [{name = "Andre Esser"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["jointtrees", "jointtrees.problems"]
